@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginScreenFragment">
+
+    <fragment
+        android:id="@+id/loginScreenFragment"
+        android:name="com.yusufmendes.sisterslabakademiuygulamadersi4.ui.login.LoginScreenFragment"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_loginScreenFragment_to_registerScreenFragment"
+            app:destination="@id/registerScreenFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loginScreenFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerScreenFragment"
+        android:name="com.yusufmendes.sisterslabakademiuygulamadersi4.ui.register.RegisterScreenFragment"
+        android:label="fragment_register_screen"
+        tools:layout="@layout/fragment_register_screen" >
+        <action
+            android:id="@+id/action_registerScreenFragment_to_loginScreenFragment2"
+            app:destination="@id/loginScreenFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.yusufmendes.sisterslabakademiuygulamadersi4.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_loginScreenFragment"
+            app:destination="@id/loginScreenFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "144191965737",
+    "project_id": "uygulamadersi-c6b4d",
+    "storage_bucket": "uygulamadersi-c6b4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144191965737:android:785b43de86dce9418b6a38",
+        "android_client_info": {
+          "package_name": "com.yusufmendes.sisterslabakademiuygulamadersi4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144191965737-6b7fmv3c44vvp1e3sv3cbpivvvjd7v0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYePexqSOqRanvn2viIoREqh4Q_uAnAHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144191965737-6b7fmv3c44vvp1e3sv3cbpivvvjd7v0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
